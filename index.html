@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid layout </title>
+    <style>
+        .wrapper {
+            /* To display grid on page */
+            display: grid;
+
+            grid-template-columns: 70% 30%;
+
+            /* To provide gap between gird on column  */
+            /* grid-column-gap: 1.5em; */
+
+            /* To provide gap between gird on column  */
+            /* grid-row-gap: 1.5em; */
+
+            /* same as above */
+            grid-gap: 1.5em;
+
+
+        }
+
+
+        .wrapper div {
+            background: rgba(235, 19, 19, 0.2);
+            padding: 1.5em;
+        }
+
+        .wrapper div:nth-child(odd) {
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere libero inventore, adipisci perferendis, sed
+            itaque, architecto deleniti ratione delectus perspiciatis earum explicabo dolorem ab consectetur. Architecto
+            magni officiis laboriosam tempora in eaque aliquam, quaerat natus, accusamus itaque labore minima atque
+            ipsum sit nihil ab ipsa nisi molestias, totam culpa! Harum assumenda commodi omnis deleniti? Libero vitae
+            quasi, cum provident veritatis delectus! Quam necessitatibus quidem quae id voluptates facere laudantium
+            odit, eaque magni, ipsa impedit placeat pariatur dolore, vel hic debitis?
+        </div>
+
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur molestiae, ipsum repellat hic,
+            ducimus labore explicabo expedita inventore officiis soluta ab vel. Dicta facilis, enim earum nemo doloribus
+            beatae quae.</div>
+
+        <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere libero inventore, adipisci perferendis, sed
+            itaque, architecto deleniti ratione delectus perspiciatis earum explicabo dolorem ab consectetur. Architecto
+            magni officiis laboriosam tempora in eaque aliquam, quaerat natus, accusamus itaque labore minima atque
+            ipsum sit nihil ab ipsa nisi molestias, totam culpa! Harum assumenda commodi omnis deleniti? Libero vitae
+            quasi, cum provident veritatis delectus! Quam necessitatibus quidem quae id voluptates facere laudantium
+            odit, eaque magni, ipsa impedit placeat pariatur dolore, vel hic debitis?
+        </div>
+
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur molestiae, ipsum repellat hic,
+            ducimus labore explicabo expedita inventore officiis soluta ab vel. Dicta facilis, enim earum nemo doloribus
+            beatae quae.</div>
+
+    </div>
+    </div>
+
+
+<hr>
+<a href="index2.html" target="_blank" style="text-decoration: none; color: red;">Click here for Page 2 </a> <br> 
+<a href="index3.html" target="_blank" style="text-decoration: none; color: red;">Click here for Page 3 </a>
+</body>
+
+</html>

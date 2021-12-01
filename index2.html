@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid part 2</title>
+
+    <style>
+
+        .wrapper{
+            display: grid;
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* same as above */
+            grid-template-columns:repeat(3, 1fr);
+            grid-gap: 1.5em;
+
+            /* grid-auto-rows:100px ; */
+            grid-auto-rows: minmax(100px, auto);
+
+        }
+
+        .wrapper div {
+            background: #eee;
+            padding: 1.5em;
+
+        }
+
+        .wrapper div:nth-child(odd) {
+            background: #ddd;
+        }
+
+        .nested{
+            display: grid;
+            grid-template-columns:repeat(3, 1fr);
+            grid-auto-rows: 70px;
+            grid-gap: 1.5em;
+        }
+
+        .nested div{
+            border: #333 1px solid;
+            padding: 1em;
+            
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga hic soluta quos porro earum repudiandae aperiam harum eligendi numquam! Magni sunt ipsa quod facere laudantium!</div>
+
+        <div class="wrapper">
+            Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, veniam tempora maiores, sunt possimus corrupti dolorum dolores, eius voluptates eos voluptate architecto saepe ducimus aut esse ipsa eaque eum nesciunt. Dolor fuga, commodi iste dignissimos blanditiis magnam tempore quia rem in eius similique temporibus ratione placeat asperiores est? Ut, dolor. sit amet.
+            </div>
+
+
+            <div class="nested">
+               <div>lorem</div>
+               <div>lorem</div>
+               <div>lorem</div>
+               <div>lorem</div>
+               <div>lorem</div>
+               <div>lorem</div>
+               <div>lorem</div>
+               <div>lorem</div>
+               <div>lorem</div>
+
+            </div>
+
+            <div>
+                Lorem ipsum dolor sit amet.
+            </div>
+
+            <div>
+                Lorem ipsum dolor sit amet.
+            </div>
+        </div>
+        <hr>
+        <a href="index.html" target="_blank" style="text-decoration: none; color: red;">Click here First Page  </a> <br>
+        <a href="index3.html" target="_blank" style="text-decoration: none; color: red;">Click here for Page 3  </a>
+</body>
+
+</html>
